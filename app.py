@@ -1,10 +1,16 @@
 from googleapiclient.discovery import build
 import random
 import json
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Charge le fichier .env
+
+api_key = os.getenv("YOUTUBE_API_KEY")
 
 
 # Clé API YouTube (remplacez par votre clé API)
-YOUTUBE_API_KEY = "AIzaSyAErCbf81jb8YLYe7hZMRXsKyPWbhTrtw8"
+YOUTUBE_API_KEY = ""
 
 def load_data():
     # Simuler les données nécessaires
